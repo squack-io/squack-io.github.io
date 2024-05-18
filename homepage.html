@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunspot</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Helvetica, Arial, sans-serif;
+            color: black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .content {
+            text-align: left;
+            margin: 125px;
+            z-index: 1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .cube {
+            width: 25px;
+            height: 25px;
+            background-color: black;
+            position: absolute;
+            top: -50px;
+            animation: drop-cube 2s ease-in-out forwards;
+        }
+
+        @keyframes drop-cube {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(calc(50vh - 25px)); opacity: 0.8; }
+        }
+
+        /* Customize the number of cubes and their starting positions */
+        .cube:nth-child(1) { left: calc(10% - 10px); animation-delay: 0.1s; }
+        .cube:nth-child(2) { left: calc(20% - 10px); animation-delay: 0.2s; }
+        .cube:nth-child(3) { left: calc(30% - 10px); animation-delay: 0.3s; }
+        .cube:nth-child(4) { left: calc(40% - 10px); animation-delay: 0.4s; }
+        .cube:nth-child(5) { left: calc(50% - 10px); animation-delay: 0.5s; }
+        .cube:nth-child(6) { left: calc(60% - 10px); animation-delay: 0.6s; }
+        .cube:nth-child(7) { left: calc(70% - 10px); animation-delay: 0.7s; }
+        .cube:nth-child(8) { left: calc(80% - 10px); animation-delay: 0.8s; }
+        .cube:nth-child(9) { left: calc(90% - 10px); animation-delay: 0.9s; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="./sunspot2.png" alt="Sun image" class="image" width="100">
+        <h1>Sunspot</h1>
+        <p>Natural-language & CV search<br>for consumer applications</p>
+        <p>info@sunspot.com</p>
+    </div>
+
+    <!-- Cubes
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div>
+    <div class="cube"></div> -->
+
+</body>
+</html>
